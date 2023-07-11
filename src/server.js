@@ -6,6 +6,7 @@ import path from 'path';
 import routes from './routes';
 import cors from 'cors';
 import fileupload from 'express-fileupload';
+require('./models')
 
 const app = express();
 
@@ -37,5 +38,5 @@ app.use((req, res) => {
 });
 
 app.listen(3333, () => {
-  console.log(`ABEX API running in 3333`);
+  console.log(`CRS Store running in 3333`);
 });
